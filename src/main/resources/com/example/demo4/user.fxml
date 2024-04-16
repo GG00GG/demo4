@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<GridPane xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <padding>
+        <Insets top="50" right="50" bottom="50" left="50"/>
+    </padding>
+
+    <!-- Тут можно разместить элементы интерфейса пользователя, если нужно -->
+
+    <Label text="Добро пожаловать, пользователь!" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+</GridPane>

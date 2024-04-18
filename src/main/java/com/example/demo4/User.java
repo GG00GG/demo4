@@ -8,9 +8,15 @@ public class User {
     private String money;
 
 
+
+
     public User(String login, String passvord) {
         this.login = login;
         this.passvord = passvord;
+    }
+
+    public User() {
+        
     }
 
     public String getLogin() {

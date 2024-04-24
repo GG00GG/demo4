@@ -60,7 +60,23 @@ public class HelloController {
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
                 stage.showAndWait();
-            }if (!usernameField.equals("") && !passwordField.equals("")){
+            } if (usernameField.equals("Bugalter") && passwordField.equals("Bugalter")) {
+                authSiglnButton.getScene().getWindow().hide();
+
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("sdf.fxml"));
+
+                try {
+                    loader.load();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                Parent root = loader.getRoot();
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.showAndWait();}
+            if (!usernameField.equals("") && !passwordField.equals("")){
                 loginUser(usernameField, passwordField);
 
             }else {
@@ -91,7 +107,7 @@ public class HelloController {
 
         if (counter >= 1) {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("user.fxml"));
+            loader.setLocation(getClass().getResource("TimerApp.fxml"));
 
             try {
                 loader.load();
